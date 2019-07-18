@@ -2,7 +2,7 @@ import React from 'react'
 import App, { Container } from 'next/app'
 import { ThemeProvider, Styled } from 'theme-ui'
 import theme from '../src/theme'
-import Head from '../components/Head'
+import Head from '../components/head'
 
 
 class MyApp extends App {
@@ -21,7 +21,7 @@ class MyApp extends App {
 
     return (
       <Container>
-        <Head/>
+        <Head {...pageProps}/>
         <ThemeProvider theme={theme}>
           <Styled.root>
             <Component {...pageProps} />
