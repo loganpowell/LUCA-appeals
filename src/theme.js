@@ -9,7 +9,8 @@
 //     background: '#fff',
 //     primary: '#33e',
 //   },
-// }
+// }'
+import USC from '../theme/colorsUSWDS.json'
 
 export default {
   colors: {
@@ -19,8 +20,10 @@ export default {
     secondary: '#609',
   },
   fonts: {
-    body: 'system-ui, sans-serif',
-    heading: 'inherit',
+    // heading: 'inherit',
+    heading: 'Merriweather, system-ui, sans-serif',
+    body: '"Source Sans Pro", system-ui, serif',
+    monospace: '"Roboto Mono", system-ui, sans-serif'
   },
   styles: {
     root: {
@@ -29,8 +32,9 @@ export default {
       bg: 'background',
     },
     h1: {
+      fontFamily: 'heading',
       fontSize: [4, 5, 6],
-      color: 'primary',
+      color: USC.blue[7],
     },
     a: {
       color: 'primary',

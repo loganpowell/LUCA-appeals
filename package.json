@@ -30,5 +30,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "theme-ui": "^0.2.14"
+  },
+  "devDependencies": {
+    "lodash.camelcase": "^4.3.0"
   }
 }

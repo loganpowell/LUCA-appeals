@@ -2,6 +2,8 @@ import React from 'react'
 import App, { Container } from 'next/app'
 import { ThemeProvider, Styled } from 'theme-ui'
 import theme from '../src/theme'
+import Head from '../components/Head'
+
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -19,6 +21,7 @@ class MyApp extends App {
 
     return (
       <Container>
+        <Head/>
         <ThemeProvider theme={theme}>
           <Styled.root>
             <Component {...pageProps} />
