@@ -23,11 +23,13 @@ const fileReducer = async (acc, cur) => {
           const objName = valsObj.length < 1 ? "" : valsObj[0].name  
 
           if (objName === "") {
-            return Object.assign(todo, { [camelCase(name)]: valsArray.map(val => val.value)})
+            return Object.assign(todo, 
+              { [camelCase(name)]: valsArray.map(val => val.value)})
           } else {
-            Object.assign(todo, { [camelCase(name)]: valsArray.map(val => val.value)})
-            return Object.assign(todo, { 
-              [camelCase(`${name}-${objName}`)]: valsObj[0].value.filter( v => v.value ).map( g => g.value) })
+            Object.assign(todo, 
+              { [camelCase(name)]: valsArray.map(val => val.value)})
+            return Object.assign(todo, 
+              { [camelCase(`${name}-${objName}`)]: valsObj[0].value.filter( v => v.value ).map( g => g.value) })
           }
         })
         .catch(err => console.warn(err))
