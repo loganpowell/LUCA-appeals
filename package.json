@@ -27,7 +27,7 @@
     "@mdx-js/react": "^1.0.27",
     "@next/mdx": "^9.0.2",
     "@theme-ui/sidenav": "^0.2.14",
-    "next": "^9.0.2",
+    "next": "^11.1.0",
     "next-mdx-enhanced": "^1.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
